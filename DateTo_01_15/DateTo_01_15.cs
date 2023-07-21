@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using Vishnu.Interchange;
 
 namespace DateTo_01_15
@@ -26,7 +23,7 @@ namespace DateTo_01_15
         /// </summary>
         /// <param name="toConvert">Datum als DateTime.</param>
         /// <returns>DateTime mit Tag 01 oder 15.</returns>
-        public object ModifyValue(object toConvert)
+        public object? ModifyValue(object? toConvert)
         {
             if (toConvert is DateTime)
             {
@@ -42,7 +39,7 @@ namespace DateTo_01_15
             }
             else
             {
-                throw new ArgumentException(String.Format("{0}: kann {1} nicht konvertieren, erwartet wird DateTime", this.GetType().Name, toConvert.ToString()));
+                throw new ArgumentException(String.Format("{0}: kann {1} nicht konvertieren, erwartet wird DateTime", this.GetType().Name, toConvert?.ToString()));
             }
         }
     }
