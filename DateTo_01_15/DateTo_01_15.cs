@@ -9,7 +9,6 @@ namespace DateTo_01_15
     /// größer-gleich 15 ist.
     /// </summary>
     /// <remarks>
-    /// File: DateTo_01_15.cas
     /// Autor: Erik Nagel
     ///
     /// 24.06.2013 Erik Nagel: erstellt
